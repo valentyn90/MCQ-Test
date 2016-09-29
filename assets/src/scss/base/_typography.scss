@@ -1,0 +1,153 @@
+
+/*
+ * Universal colours for links, unless overriden
+ *
+ */
+a:link,
+a:visited {
+	position: relative;
+	}
+a:focus,
+a:hover,
+a:active {
+	text-decoration: underline;
+	outline: none !important;
+	}
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}
+
+p {
+	font-size: inherit;
+	line-height: inherit;
+
+	&:last-child {
+		margin-bottom: 0 !important;
+		}
+	}
+
+/*
+ * Headings
+ *
+ */
+%h {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	font-weight: $headings-font-weight;
+	margin: $headings-margin;
+}
+
+h1 {
+	@extend %h;
+	font-size: $font-size-h1;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #f1f1f1;
+}
+
+h2 {
+	@extend %h;
+	font-size: $font-size-h2;
+}
+
+h3 {
+	@extend %h;
+	font-size: $font-size-h3;
+}
+
+h4 {
+	@extend %h;
+	font-size: $font-size-h4;
+	text-transform: uppercase;
+}
+
+h5 {
+	@extend %h;
+	font-size: $font-size-h5;
+}
+
+h6 {
+	@extend %h;
+	font-size: $font-size-h6;
+}
+
+ol li,
+ul li {
+	padding-bottom: 0.5rem;
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+
+/*
+ * Accessories
+ *
+ */
+b,
+dt,
+optgroup,
+strong {
+	// font-weight: 400;
+	}
+
+hr {
+	margin-bottom: 3rem !important;
+	}
+
+pre {
+    background-color: $pre-bg;
+    border: 1px solid $pre-border-color;
+    color: $pre-color;
+    // max-height: $pre-scrollable-max-height;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.42857;
+    margin: 0 0 10px;
+    padding: 1rem;
+    word-break: break-all;
+    word-wrap: break-word;
+	}
+blockquote,
+blockquote.blockquote {
+    border-left: 5px solid #eee;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 1em 2em;
+	}
+blockquote > blockquote {
+	margin-left: 0;
+	}
+blockquote p {
+	margin-bottom: 35px;
+	}
+
+/*
+ * Hyphens
+ * http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+ * Accepted values: [ none | manual | auto ]
+ *
+ */
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  hyphens: none;
+}
+
+// Tables
+//
+// Overriding Bootstrap
+table.table {
+	tr th {
+		@include heading-font;
+	}
+}

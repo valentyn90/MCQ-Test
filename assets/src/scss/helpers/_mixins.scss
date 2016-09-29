@@ -1,0 +1,58 @@
+@mixin primary-font($size, $line-height: 1.5625) {
+	font-size: $size;
+	line-height: $line-height;
+	}
+
+@mixin heading-font($size: $font-size-base, $line-height: $line-height) {
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 600;
+	font-size: $size;
+	line-height: $line-height;
+	-webkit-font-feature-settings: "kern" 1;
+	text-rendering: optimizeLegibility;
+	}
+
+
+// Card-like display of boxes with box shadow
+//
+@mixin ui-card {
+	box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);
+}
+
+// Round icons
+//
+@mixin icon-round {
+	display: block;
+	font-size: $icon-round-size;
+	line-height: $icon-round-line-height;
+	border-radius: $icon-round-border-radius;
+	outline: none;
+	padding: $icon-round-padding;
+
+	&:link,
+	&:visited {
+		color: $icon-round-color;
+		background-color: $icon-round-bg;
+	}
+
+	&:focus,
+	&:hover,
+	&:active {
+		color: $icon-round-color-hover;
+		background-color: $icon-round-bg-hover;
+		text-decoration: none;
+	}
+
+	i {
+		padding: 0 10px 0 0;
+	}
+}
+
+@mixin scrolling {
+	opacity: 0.9;
+	transition: opacity 0.5s ease;
+
+	&:hover {
+		opacity: 1;
+	}
+}

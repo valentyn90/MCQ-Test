@@ -1,0 +1,161 @@
+/*
+ * Default
+ * 
+ */
+
+
+/*
+ * XS
+ * Grid breakpoint: 0
+ * Container max width: -
+ */
+
+// Resolutions below 34em (544px)
+@media screen and (max-width: 34em) {
+
+}
+
+/*
+ * SM
+ * Grid breakpoint: 34em = 544px
+ * Container max width: 34rem = 544px
+ */
+
+// Anything above 34em (544px)
+@media screen and (min-width: 34em) {
+
+}
+
+/*
+ * MD
+ * Grid breakpoint: 48em = 768px
+ * Container max width: 45rem = 720px
+ */
+
+// Anything above 48em (768px)
+@media screen and (min-width: 48em) {
+
+}
+
+// Between 34em (544px) and 48em (768px)
+@media screen and (min-width: 48em) and (max-width: 62em) {
+
+}
+
+// Resolutions below 48em (768px)
+@media screen and (max-width: 48em) { 
+ 
+}
+
+/*
+ * LG
+ * Grid breakpoint: 62em = 992px
+ * Container max width: 60rem = 960px
+ */
+
+// Anything above 62em (992px)
+@media screen and (min-width: 62em) {
+
+}
+ 
+// Between 48em (768px) and 62em (992px)
+@media screen and (min-width: 48em) and (max-width: 62em) {
+
+}
+
+// Resolutions below 62em (992px)
+@media screen and (max-width: 62em) {
+
+}
+
+/*
+ * XL
+ * Grid breakpoint: 75em = 1200px
+ * Container max width: 72.25rem = 1156px
+ */
+
+// Anything above 75em (1200px)
+@media screen and (min-width: 75em) {
+
+}
+
+// Between 62em (992px) and 75em (1200px)
+@media screen and (min-width: 62em) and (max-width: 75em) {
+
+}
+
+
+/*
+ * Sass
+ * 
+ */
+
+
+// Below 34em (544px)
+@include media("<sm") {
+
+}
+
+// Above 34em (544px)
+@include media(">sm") {
+
+}
+
+// Below 48em (768px)
+@include media("<md") {
+ 
+}
+
+// Between 34em (544px) and 48em (768px)
+@include media(">sm", "<md") {
+
+}
+
+// Above 48em (768px)
+@include media(">sm") {
+
+}
+
+// Below 62em (992px)
+@include media("<lg") {
+
+}
+ 
+// Between 48em (768px) and 62em (992px)
+@include media(">md", "<lg") {
+
+}
+
+// Above 62em (992px)
+@include media(">lg") {
+
+}
+
+// Below 75em (1200px)
+@include media("<xl") {
+
+}
+
+// Between 62em (992px) and 75em (1200px)
+@include media(">lg", "<xl") {
+
+}
+
+// Above 75em (1200px)
+@include media(">xl") {
+
+}
+
+// Retine declarations, even with other breakpoints
+//
+@include media("retina2x", ">xl") {
+
+}
+
+// Complex alias
+//
+$retina3x-big-screen: ">=lg", "<xl", "landscape", "retina3x";
+
+@include media($retina3x-big-screen) {
+
+}

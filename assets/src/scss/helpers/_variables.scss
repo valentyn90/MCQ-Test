@@ -1,0 +1,98 @@
+// Include media plugging into Bootstrap 4's Grid Breakpoints map
+//
+$breakpoints: $grid-breakpoints;
+
+// Body
+//
+// Overriding Bootstrap _variables.scss
+$body-bg: 										#FFF;
+$body-max-width:								82rem;
+
+// Anchors
+//
+//
+$anchor-ondark:									#F9CA56 !default;
+$anchor-ondark-hover:							#efefef !default;
+$anchor-ondark-hover-decoration:				underline !default;
+
+// Header
+//
+//
+$header-bg:										#fff !default;
+$header-border-color:							#dfdfdf !default;
+$header-link-color:								#555555 !default;
+$header-link-hover-color:						#222 !default;
+$header-link-hover-decoration:					none !default;
+
+// Sidebar
+//
+//
+$sidebar-bg:									#fff !default;
+$sidebar-border-color: 							#dfdfdf !default;
+$sidebar-link-color:							#000 !default;
+$sidebar-link-hover-color:						#000 !default;
+$sidebar-link-hover-decoration:					underline !default;
+
+
+// Round icons
+//
+//
+$icon-round-bg: 								#444 !default;
+$icon-round-bg-hover: 							#222 !default;
+$icon-round-color: 								#fff !default;
+$icon-round-color-hover: 						#fff !default;
+$icon-round-size:								14px !default;
+$icon-round-line-height:						14px !default;
+$icon-round-padding:							10px 0 5px !default;
+$icon-round-border-radius:						50px !default;
+
+// Social media icons
+//
+//
+$icon-social-twitter:							#019fe9 !default;
+$icon-social-rss: 								#d96003 !default;
+$icon-social-email: 							#50b948 !default;
+
+
+// States
+//
+// Extending the state variables in Bootstrap _variables.scss
+$state-success-border-alt:						#449d44;
+$state-success-info-alt:						#5bc0de;
+$state-success-warning-alt:						#f0ad4e;
+$state-success-danger-alt:						#c9302c;
+
+
+// Headings
+//
+// Overrides Bootstrap
+$font-size-h1:									2rem;
+$font-size-h2:									1.75rem;
+$font-size-h3:									1.5rem;
+$font-size-h4:									1rem;
+$font-size-h5:									1rem;
+$font-size-h6:									1rem;
+
+// Custom margins
+$headings-margin:								2rem 0 1rem !default;
+
+
+// Callout
+//
+// Style shamelessly taken from Bootstrap docs
+$callout-padding:								1.5rem;
+$callout-margin:								1.5rem 0;
+$callout-border-color:							#eee;
+$callout-border-radius:							0.25rem;
+
+// Navbar toggler button
+//
+$button-width:									2rem;
+$button-height:									2rem;
+$bar-thickness:									0.25rem;
+$bar-color:										#000;
+$button-padding:								0.2rem;
+$button-bar-space:								0.2rem;
+$button-transition-duration:					0.3s;
+$button-bg-color:								#fff;
+$button-bg-active-color:						#efefef;

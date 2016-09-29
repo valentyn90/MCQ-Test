@@ -1,0 +1,205 @@
+.comentan {
+    overflow: hidden;
+    clear: both;
+}
+
+.comentan p {
+    color: #4c5767;
+}
+.comentan ul {
+    margin-bottom: 60px;
+    padding-left: 0;
+}
+.comentan ul li:first-child {
+    margin-left: 0;
+}
+.comentan ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 3%;
+    vertical-align: middle;
+}
+
+.piePrincipal {
+    background-color: #f7f7f7;
+    background-image: url("assets/images/fondos/fondoPieAzul.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin-top: 60px;
+
+    @include media("<md") {
+        background-image: none;
+        min-height: 50px;
+        padding-bottom: 20px;
+    }
+}
+.piePrincipal .mensajePie {
+	color: #fff;
+    display: block;
+    margin-bottom: 60px;
+    padding-left: 425px;
+    padding-top: 50px;
+    position: relative;
+
+    @include media("<lg") {
+        padding-left: 38%;
+    }
+    
+    @include media("<md") {
+        color: #337ab7;
+        padding-left: 0;
+    }
+    
+}
+.piePrincipal .mensajePie p {
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    position: relative;
+    width: 70%;
+
+    @include media("<md") {
+        width: 90%;
+    }
+}
+.piePrincipal .mensajePie .comillas {
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    left: -60px;
+    position: absolute;
+    top: 0;
+
+    @include media("<md") {
+        color: #337ab7;
+        left: 0;
+        display: block;
+        font-size: 2em;
+        position: relative;
+    }
+}
+.piePrincipal .mensajePie a::before {
+	content: "‣";
+    display: none;
+    font-size: 2em;
+    left: 14%;
+    position: absolute;
+    top: -3px;
+}
+.piePrincipal .mensajePie a {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 1.2em;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 65%;
+
+    @include media("<md") {
+        background-color: #337ab7;
+        border: 2px solid #337ab7;
+        width: 100%;
+    }
+}
+.piePrincipal .mensajePie a:hover {
+    background-color: #fff;
+    color: #22b1cf;
+    text-decoration: none;
+}
+
+.logoPie {
+    margin-bottom: 25px;
+}
+.logoPie img {
+	margin: auto;
+	display: block;
+}
+
+.piePrincipal .textoPie {
+    color: #4c5868;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @include media("<md") {
+        display: none;
+    }
+}
+
+.piePrincipal .menuCiudades {
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    ul {
+        padding: 0 !important;
+    }
+
+    @include media("<md") {
+        display: none;
+    }
+}
+.piePrincipal .menuCiudades ul:first-child {
+    margin-left: 0;
+}
+.piePrincipal .menuCiudades ul {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 15%;
+}
+.piePrincipal .menuCiudades ul li {
+    list-style-type: none;
+    margin-bottom: 4px;
+}
+.piePrincipal .menuCiudades ul li a {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #858585;
+}
+
+.piePrincipal .enlaces {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+    padding: 0 20px 5px;
+}
+.piePrincipal .enlaces ul {
+    text-align: center;
+    margin-bottom: 0;
+}
+.piePrincipal .enlaces ul li:first-child {
+    margin-left: 0;
+}
+.piePrincipal .enlaces ul li {
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: -4px;
+    vertical-align: top;
+    width: auto;
+}
+.piePrincipal .enlaces ul li a {
+    color: #868585;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #a6a6a6;
+    font-size: 0.85em;
+    margin-left: 20px;
+}
+.redesSociales {
+    float: right;
+    margin-right: 20px;
+}
+.redesSociales a {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: -4px;
+}

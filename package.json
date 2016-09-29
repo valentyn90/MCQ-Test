@@ -1,0 +1,45 @@
+{
+  "name": "Dawn",
+  "version": "0.0.1",
+  "description": "A Started Package for Wordpress Theme Development.",
+  "homepage": "http://saddamazad.com",
+  "private": true,
+  "author": "Saddam Azad",
+  "authoruri": "http://saddamazad.com",
+  "contributors": [
+    {
+      "name": "Your Name Here",
+      "email": "your@email.com"
+    }
+  ],
+  "scripts": {},
+  "repository" :  { 
+    "type" : "git"
+  , "url" : "https://github.com/azadcreative/saddamazad.com"
+  },
+  "license": "Commercial",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-newer": "~1.1.1",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~3.3.0",
+    "time-grunt": "^1.2.1",
+    "grunt-banner": "~0.3.1",
+    "grunt-bump": "0.6.0",
+    "grunt-contrib-concat": "~0.5.1",
+    
+    "grunt-sass": "~1.1.0",
+    "grunt-scss-lint": "^0.3.8",
+    "grunt-csscomb": "~3.1.0",
+    "grunt-autoprefixer": "~3.0.3",
+    "grunt-contrib-cssmin": "~0.14.0",
+
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-uglify": "~0.9.2",
+    "grunt-line-remover": "0.0.2"
+  }
+}

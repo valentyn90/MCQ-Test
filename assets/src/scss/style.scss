@@ -1,0 +1,43 @@
+/*!
+Theme Name: Ultimos
+Theme URI: http://schoolmars.com
+Author: Saddam Azad 
+Author URI: http://schoolmars.com
+Version: 0.0.1
+Description: 
+Licensed Commercial 
+Copyright 2015-2015 Saddam Azad
+*/
+
+@charset "utf-8";
+
+// Import Bootstrap parts
+@import "../../vendor/bootstrap/scss/variables";
+@import "../../vendor/bootstrap/scss/mixins";
+
+// Import "include media"
+@import "../../vendor/include-media/dist/include-media";
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/helpers";
+
+// Components
+@import "components/question-paper";
+
+// Base
+@import "base/default";
+@import "base/typography";
+
+// Layout
+@import "layout/body";
+@import "layout/header";
+@import "layout/aside";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/page-post-archive";
+
+// Shame
+@import "shame";

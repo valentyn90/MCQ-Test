@@ -1,0 +1,489 @@
+@charset "UTF-8";
+/*!
+Theme Name: Ultimos
+Theme URI: http://schoolmars.com
+Author: Saddam Azad 
+Author URI: http://schoolmars.com
+Version: 0.0.1
+Description: 
+Licensed Commercial 
+Copyright 2015-2015 Saddam Azad
+*/
+#question {
+  padding-left: .5rem; 
+  background-color: #4d9de0;
+}
+#question #results {
+  padding: .1rem 0;
+  margin-left: -.5rem; 
+  color: #ff6a00;
+  background-color: #1eff1e;
+}
+#question #results h3 {
+  margin: 1rem 0 1rem;
+}
+#question #quizForm {
+  position: relative;
+  left: 35%;
+  font-size: large; 
+  color: #403333;
+}
+#question #quizForm h2 {
+  color: #f4f4f4;
+}
+#question #quizForm input[type="radio"] {
+  display: none;
+}
+#question #quizForm input[type="radio"] {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+#question #quizForm input[type="radio"] {
+  background-color: #000;
+}
+#question #quizForm input[type="radio"]:checked {
+  background-color: #fff;
+}
+#question #quizForm input[type="radio"],
+    #question #quizForm input[type="radio"]:checked {
+  -webkit-transition: background-color .4s linear;
+       -o-transition: background-color .4s linear;
+          transition: background-color .4s linear;
+}
+#question #quizForm input[type="submit"] {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+body {
+  font-size: 14px;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+  line-height: 1.5625;
+  color: #373a3c;
+  word-wrap: break-word;
+  background-color: #fff; 
+
+      -ms-hyphens: auto;
+}
+
+/*
+ * Universal colours for links, unless overriden
+ *
+ */
+a:link,
+a:visited {
+  position: relative;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: underline;
+  outline: none !important;
+}
+
+@media print {
+  a[href]:after {
+    content: " (" attr(href) ") ";
+  }
+}
+
+p {
+  font-size: inherit;
+  line-height: inherit;
+}
+p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/*
+ * Headings
+ *
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 2rem 0 1rem; 
+  font-weight: 500;
+  line-height: 1;
+
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  padding-bottom: 10px;
+  font-size: 2rem;
+  border-bottom: 1px dotted #f1f1f1;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+ol li,
+ul li {
+  padding-bottom: .5rem;
+}
+ol li:last-child,
+  ul li:last-child {
+  padding-bottom: 0;
+}
+
+/*
+ * Accessories
+ *
+ */
+hr {
+  margin-bottom: 3rem !important;
+}
+
+pre {
+  display: block;
+  padding: 1rem;
+  margin: 0 0 10px;
+  font-size: 1rem;
+  line-height: 1.42857;
+  color: #373a3c;
+  word-break: break-all;
+  word-wrap: break-word; 
+  background-color: #f7f7f9;
+  border: 1px solid #ccc;
+}
+
+blockquote,
+blockquote.blockquote {
+  padding: 1em 2em; 
+  font-size: 1rem;
+  font-style: italic;
+  border-left: 5px solid #eee;
+}
+
+blockquote > blockquote {
+  margin-left: 0;
+}
+
+blockquote p {
+  margin-bottom: 35px;
+}
+
+/*
+ * Hyphens
+ * http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation
+ * Accepted values: [ none | manual | auto ]
+ *
+ */
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  -webkit-hyphens: none;
+     -moz-hyphens: none;
+          hyphens: none; 
+
+      -ms-hyphens: none;
+}
+
+table.table tr th {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+
+  -webkit-font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ * Default
+ * 
+ */
+.body-container {
+  max-width: 82rem; 
+  padding-right: .9375rem;
+  padding-left: .9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.body-container:before, .body-container:after {
+  display: table; 
+  content: " ";
+}
+.body-container:after {
+  clear: both;
+}
+@media (max-width: 33.99em) {
+  .body-container {
+    padding: 0;
+  }
+}
+
+header {
+  padding: 1rem 0; 
+  background-color: #77878b;
+}
+header h1 {
+  color: #f0f8ff;
+  border: 0;
+}
+
+.comentan {
+  overflow: hidden;
+  clear: both;
+}
+
+.comentan p {
+  color: #4c5767;
+}
+
+.comentan ul {
+  padding-left: 0; 
+  margin-bottom: 60px;
+}
+
+.comentan ul li:first-child {
+  margin-left: 0;
+}
+
+.comentan ul li {
+  display: inline-block;
+  margin-left: 3%;
+  vertical-align: middle; 
+  list-style-type: none;
+}
+
+.piePrincipal {
+  width: 100%;
+  min-height: 650px;
+  padding-bottom: 100px;
+  margin-top: 60px; 
+  background-color: #f7f7f7;
+  background-image: url("assets/images/fondos/fondoPieAzul.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal {
+    min-height: 50px;
+    padding-bottom: 20px; 
+    background-image: none;
+  }
+}
+
+.piePrincipal .mensajePie {
+  position: relative; 
+  display: block;
+  padding-top: 50px;
+  padding-left: 425px;
+  margin-bottom: 60px;
+  color: #fff;
+}
+@media (max-width: 61.99em) {
+  .piePrincipal .mensajePie {
+    padding-left: 38%;
+  }
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .mensajePie {
+    padding-left: 0; 
+    color: #337ab7;
+  }
+}
+
+.piePrincipal .mensajePie p {
+  position: relative;
+  width: 70%; 
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .mensajePie p {
+    width: 90%;
+  }
+}
+
+.piePrincipal .mensajePie .comillas {
+  position: absolute;
+  top: 0; 
+  left: -60px;
+  display: block;
+  font-size: 2em;
+  color: #fff;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .mensajePie .comillas {
+    position: relative; 
+    left: 0;
+    display: block;
+    font-size: 2em;
+    color: #337ab7;
+  }
+}
+
+.piePrincipal .mensajePie a::before {
+  position: absolute;
+  top: -3px; 
+  left: 14%;
+  display: none;
+  font-size: 2em;
+  content: "‣";
+}
+
+.piePrincipal .mensajePie a {
+  position: relative;
+  display: block;
+  width: 65%; 
+  font-size: 1.2em;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .mensajePie a {
+    width: 100%; 
+    background-color: #337ab7;
+    border: 2px solid #337ab7;
+  }
+}
+
+.piePrincipal .mensajePie a:hover {
+  color: #22b1cf;
+  text-decoration: none; 
+  background-color: #fff;
+}
+
+.logoPie {
+  margin-bottom: 25px;
+}
+
+.logoPie img {
+  display: block; 
+  margin: auto;
+}
+
+.piePrincipal .textoPie {
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #4c5868;
+  text-align: center;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .textoPie {
+    display: none;
+  }
+}
+
+.piePrincipal .menuCiudades {
+  padding: 0 20px; 
+  margin-bottom: 30px;
+}
+.piePrincipal .menuCiudades ul {
+  padding: 0 !important;
+}
+@media (max-width: 47.99em) {
+  .piePrincipal .menuCiudades {
+    display: none;
+  }
+}
+
+.piePrincipal .menuCiudades ul:first-child {
+  margin-left: 0;
+}
+
+.piePrincipal .menuCiudades ul {
+  display: inline-block;
+  width: 15%; 
+  margin-right: -4px;
+  margin-left: 2%;
+  vertical-align: top;
+}
+
+.piePrincipal .menuCiudades ul li {
+  margin-bottom: 4px; 
+  list-style-type: none;
+}
+
+.piePrincipal .menuCiudades ul li a {
+  margin-left: 10px;
+  font-size: .9em;
+  font-weight: 400;
+  color: #858585;
+}
+
+.piePrincipal .enlaces {
+  padding: 0 20px 5px; 
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.piePrincipal .enlaces ul {
+  margin-bottom: 0; 
+  text-align: center;
+}
+
+.piePrincipal .enlaces ul li:first-child {
+  margin-left: 0;
+}
+
+.piePrincipal .enlaces ul li {
+  display: inline-block;
+  width: auto; 
+  margin-right: -4px;
+  margin-left: 3%;
+  vertical-align: top;
+}
+
+.piePrincipal .enlaces ul li a {
+  font-weight: bold; 
+  color: #868585;
+}
+
+.copyright {
+  margin-left: 20px; 
+  font-size: .85em;
+  color: #a6a6a6;
+}
+
+.redesSociales {
+  float: right;
+  margin-right: 20px;
+}
+
+.redesSociales a {
+  display: inline-block;
+  margin-right: -4px; 
+  margin-left: 20px;
+}

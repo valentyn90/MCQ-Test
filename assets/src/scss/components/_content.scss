@@ -1,0 +1,29 @@
+/*
+ * Callout elements
+ *
+ */
+
+.bd-callout {
+    border-color: $callout-border-color;
+    border-radius: $callout-border-radius;
+    border-style: solid;
+    border-width: 1px 1px 1px 0.25rem;
+    margin: $callout-margin;
+    padding: $callout-padding;
+	}
+
+.bd-callout-success {
+    border-left-color: #449d44;
+	}
+
+.bd-callout-info {
+    border-left-color: #5bc0de;
+	}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e;
+	}
+
+.bd-callout-danger {
+    border-left-color: #c9302c;
+	}
