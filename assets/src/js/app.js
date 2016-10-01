@@ -11,7 +11,10 @@ function submitAnswers(e) {
 	// Validation
 	for (var i = 1; i <= total; i++) {
 		if (eval('q'+i) == null || eval('q'+i) == '' ) {
-			alert('You missed question '+i);
+			//alert('You missed question '+i);
+			var warning = document.getElementById('results');
+			warning.style.backgroundColor = "#fff000";
+			warning.innerHTML = '<h3>You missed '+i+'</h3>';
 			return false;
 		}
 	}
@@ -28,6 +31,7 @@ function submitAnswers(e) {
 
 	// Display result
 	var results = document.getElementById('results');
+	results.style.backgroundColor = "#1EFF1E";
 	results.innerHTML = '<h3>You scored '+score+' out of '+total+'</h3>';
 }
 
