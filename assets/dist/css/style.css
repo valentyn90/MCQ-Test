@@ -20,7 +20,7 @@ Copyright 2015-2015 Saddam Azad
   background-color: #1eff1e;
 }
 #question #results h3 {
-  margin: 1rem 0 1rem;
+  margin: 1rem 2rem;
 }
 #question #quizForm {
   position: relative;
@@ -252,6 +252,7 @@ header {
   background-color: #77878b;
 }
 header h1 {
+  padding-left: 1rem; 
   color: #f0f8ff;
   border: 0;
 }
