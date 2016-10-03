@@ -23,16 +23,31 @@ Copyright 2015-2015 Saddam Azad
   margin: 1rem 2rem;
 }
 #question #quizForm {
-  position: relative;
-  left: 35%;
+  padding-left: 15rem;
   font-size: large; 
   color: #403333;
 }
 #question #quizForm h2 {
+  margin-left: -2rem; 
   color: #f4f4f4;
+}
+#question #quizForm h2 code {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display:         inline-flex;
+  font-size: 70%;
+  white-space: pre;
 }
 #question #quizForm input[type="radio"] {
   display: none;
+}
+#question #quizForm #section1 input[type="button"] {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 #question #quizForm input[type="radio"] {
   display: inline-block;
@@ -247,14 +262,20 @@ table.table tr th {
   }
 }
 
-header {
+body {
+  background-color: #f5da55;
+}
+body header {
   padding: 1rem 0; 
   background-color: #77878b;
 }
-header h1 {
+body header h1 {
   padding-left: 1rem; 
   color: #f0f8ff;
   border: 0;
+}
+body header h1 span {
+  color: #f5da55;
 }
 
 .comentan {

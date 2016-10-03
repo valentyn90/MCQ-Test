@@ -36,5 +36,18 @@ function submitAnswers(e) {
 	results.style.backgroundColor = "#1EFF1E";
 	results.innerHTML = '<h3>You scored '+score+' out of '+total+'</h3>';
 }
-
 document.getElementById('quizForm').addEventListener('submit', submitAnswers);
+
+function next(event) {
+	var elm = event.currentTarget;
+	elm.parentElement.style.display = 'none';
+	elm.parentElement.nextElementSibling.style.display = 'block';
+}
+
+function previous(event) {
+	var pre = event.currentTarget;
+	pre.parentElement.style.display = 'none';
+	pre.parentElement.previousElementSibling.style.display = 'block';
+}
+
+
